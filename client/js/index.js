@@ -13,7 +13,7 @@ productos.forEach((product) => {
                 <div class="card-body">
 
                     <h5 class="product-text">${product.productName}</h5>
-                    <h3 class="card-text">Descripción del producto.</h3>
+                    <h4 class="card-text">${product.productName}</h4>
                     <p class="card-text">${product.price}</p>
                 </div>
             </div>
