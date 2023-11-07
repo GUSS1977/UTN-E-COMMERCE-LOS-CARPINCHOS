@@ -13,6 +13,11 @@
     <link rel="shortcut icon" href="images/icono1.png">
     <!-- Link Swiper's - Deslizador - CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="login.js" defer></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -20,18 +25,18 @@
         <!-- nav -->
         <div class="nav">
             <!-- logo -->
-            <a href="index.html" class="logo"><img src="images/logo.jpg"></a>
+            <a href="web.html" class="logo"><img src="images/logo.jpg"></a>
             <!-- nav links -->
             <div class="navbar">
                 <li><a href="index.html" class="nav-link">INICIO</a></li>
                 <li><a href="product.html" class="nav-link">PRODUCTOS</a></li>
-                <li><a href="price.html" class="nav-link">OFERTAS</a></li>
+                <li><a href="price.html" class="nav-link">PRECIOS</a></li>
                 <li><a href="contact.html" class="nav-link">CONTACTO</a></li>
                 <li><a href="login.html" class="nav-link">LOGIN</a></li>
             </div>
             <!-- menu de hamburguesa -->
             <div class="menu-icon">
-                <div class="line1"></div>b
+                <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
@@ -41,32 +46,40 @@
     <section class="contact" id="contact">
         <!-- contactos -->
         <div class="contact-text">
-            <h2 class="contact-title">BIENVENIDO DE VUELTA!</h2>
-            <P>A nuestro nuevo sitio web.</P>
-            <p>Déjanos tu consulta y te responderemos a la brevedad.</p>
+            <h2 class="contact-title">No tienes una cuenta? Registrate!</h2>
+            <P>Serás parte de nuestra comunidad Olivareña.</P>
+            <p></p>
         </div>
-        
-          <form action="https://formsubmit.co/1b0653ebbb2596c6099abb7c6deddcdd" class="form" method="POST" />
 
-            <h4>Contáctanos</h4>
+        <!-- aca va el div -->
+
+            <div class="form">
+
+            <h4>Crear cuenta</h4>
 
             <div class="fila-form">
-                <input type="text" name="Nombre">
-                <input type="text" name="Email">
+                <form action="/registrar" method="POST" id="register-form">
+                <!-- campos del formulario -->
+                <input type="text" id="user" placeholder="Nombre de Usuario" required>
+                <input type="email" id="email" placeholder="Correo Electronico" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit" class="btn">Registrarse</button>
+                <p class="error escondido">Error al Registrarse</p>
+                </form>
+                <p>Crea tu cuenta para ingresar! - <a href="register.html"></a></p>
             </div>
 
-            <div class="form-col">
-                <input type="text" name="asunto" placeholder="Asunto">
-            </div>
 
-            <div class="form-col">
-                <textarea name="" id="" cols="30" rows="8" placeholder="¿Cómo podemos ayudar?"></textarea>
-            </div>
+        <main>
 
-            <button type="submit">Send</button>
 
-        </form>
+        </main>
+
+        </div>
     </section>
+
+
+
 
     <!-- footer -->
     <div class="footer container">
