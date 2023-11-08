@@ -92,7 +92,7 @@ header {
     height: 70px;
     cursor:pointer;
 }
-.container {
+#info{
     display: flex;
     max-width: 800px;
     margin: 20px auto;
@@ -341,7 +341,6 @@ header {
     color: #202020;
 }
 
-/* servicio - heading */
 .heading {
     position: relative;
     text-align: center;
@@ -407,6 +406,74 @@ header {
 .ser-box h2 {
     color: #6b8e23;
 }
+
+.heading {
+
+    position: flex;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #a3522c;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -4px;
+    width: 100px;
+    height: 3px;
+    background: #6b8e23;
+}
+
+.services-content {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1.5rem;
+}
+
+.ser-box {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #292929;
+    border-radius: 0.3rem;
+    padding: 15px;
+}
+.ser-box:hover {
+    transform: scale(1.05);
+    transition: 0.4s all ease-in-out;
+}
+
+.ser-box .bx {
+    font-size: 1.7rem;
+    padding: 10px;
+    background-color: var(--hover_color);
+    border-radius: 0.3rem;
+}
+
+.ser-box-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1.3rem 0 0.5rem;
+}
+
+.ser-box p {
+    color: #ebd870;
+    font-size: 0.938rem;
+}
+
+.ser-box h2 {
+    color: #6b8e23;
+}
+
 
 /* product  */
 .product-content {
