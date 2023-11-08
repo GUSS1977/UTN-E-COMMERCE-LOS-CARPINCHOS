@@ -92,6 +92,67 @@ header {
     height: 70px;
     cursor:pointer;
 }
+.container {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+}
+/* Estilos de las imágenes y los contenedores de texto */
+.foto {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto y recortando el exceso */
+    border-radius: 50%;
+}
+
+.container h2 {
+    text-align: center;
+    margin-left: 25px;
+    padding: 10%;
+    display: inline-block;
+}
+
+.informacion1, .informacion2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    padding: 20px;
+}
+
+.informacion1 {
+    margin-right: 20px;
+}
+.informacion2 h2{
+    padding-top: 0%;
+}
+
+.logo1 {
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 50px;
+}
+/* boto donar blog**/
+
+.donar {
+    text-align: center;
+}
+
+.donar button {
+    background: linear-gradient(to top left, #a9dfbf 0%, #1cda68 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 25px;
+}
+.botons{
+    background-color: #66cc00;
+    border:#66cc00;
+    font-size: 17px;
+    text-align: right;
+}
 
 /* menu superior derecho */
 .navbar {
@@ -406,7 +467,7 @@ header {
 
 .product-price {
     color: #ebd870;
-    margin: 0;
+    margin-button: 14px;
     font-size: 1.5rem;
     font-weight: 400;
 }
