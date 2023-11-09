@@ -108,25 +108,35 @@ header {
 .container h2 {
     text-align: center;
     margin-left: 25px;
-    padding: 10%;
+
     display: inline-block;
 }
 
+.informacion1 p {
+text-align : justify;
+}
+.informacion2 p {
+text-align : justify;
+}
 .informacion1, .informacion2 {
+    margin-right:20px;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     justify-content: center;
     border: 1px solid;
     padding: 20px;
+    border-radius: 8px;
+    background-color: #535355;
+        color: #ebd870
 }
 
-.informacion1 {
-    margin-right: 20px;
-}
+
 .informacion2 h2{
     padding-top: 0%;
+
 }
 
 .logo1 {
@@ -342,7 +352,7 @@ header {
 }
 
 .heading {
-    position: relative;
+    position: flex;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
@@ -350,7 +360,7 @@ header {
     color: #a3522c;
 }
 
-.heading::after {
+.heading ::after {
     content: '';
     position: absolute;
     display: flex;
@@ -409,7 +419,7 @@ header {
 
 .heading {
 
-    position: flex;
+    position: relative;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
@@ -1124,9 +1134,10 @@ header {
     background-color: rgba(25, 25, 25);
     padding: 10px;
     border-radius: 50%;
-    height: 24px;
-    width: 24px;
+    height: 45px;
+    width: 45px;
     transition: transform 0.2 ease-in-out;
+
 }
 .cart-btn:hover{
     cursor: pointer;
